@@ -1,0 +1,280 @@
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    color: #4c4d5f;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+
+}
+
+/* --- Variables --- */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+#headerLogo {
+    padding-right: 8rem;
+}
+
+#headerPDiv {
+    display: flex;
+}
+
+#headerPDiv div {
+    flex: 1 0 200rem;
+}
+
+#headerPDiv p {
+    padding: 0 2rem;
+}
+
+#headerButton button {
+    padding: 0.4rem 0.4rem;
+    margin: 0 0.4rem 0;
+    font-size: 14px;
+    padding: 0.5em 2em;
+}
+
+#firstHeaderButton{
+    background-color: white;
+    color: #00b289;
+    border-radius: 5px;
+    border: 1px solid #00b289;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+#secondHeaderButton{
+    background-color: #00b289;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10em;
+    padding: 1em 0 ;
+}
+
+.firstSection h1{
+    font-size: 2em;
+}
+.firstSectionButtom :first-child{
+    font-weight: bold;
+}
+
+.firstSectionButtom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSectionButtom button {
+    border-radius: 50px;
+    padding: 1em 2em;
+    margin: 0 1.5em;
+    background-color: #00b289;
+    border: #00b289;
+}
+
+.secondSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 2rem;
+}
+
+.secondSectionTopTitle {
+    padding: 1em;
+    border-bottom: 2px solid #00b289;
+    
+}
+
+.secondSectionTopTitle p {
+    font-size: 1.5rem;
+}
+
+.secondSectionTopTitle h1 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.secondSectionTopTitle span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.secondSectionMainDiv {
+    border: 2px solid black;
+    padding: 2.5rem 1.5rem;
+    background-color: #fafffe;
+    min-width: 30em;
+}
+
+.secondSection ul {
+    padding: 1rem;
+}
+
+.secondSection li:before {
+    content: '\2713';
+    display: inline-block;
+    color: #00b289;
+    padding: 0 6px 0 0;
+}
+
+.secondSection li {
+    padding: 0.5rem 0;
+}
+
+.secondSection button {
+    background-color: #00b289;
+    color: white;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#supercargeDivH1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+.threedivcolumn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 20em;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.threedivcolumn h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.threedivcolumn h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.threedivcolumnCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blueBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 2em;
+    background-color:#dbfff8;
+    margin: 3em 20em;
+}
+
+.blueBox h1{
+    font-size: 2em;
+}
+
+.blueBox span{
+    color: #00b289;
+}
+
+.blueBox button{
+    padding: 1em 3em;
+    border: none;
+    background-color: #00b289;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lastdivH1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5em;
+    font-size: 2em;
+    color: #00b289;
+}
+
+.lastDivList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 20em;
+    padding: 0 4em;
+}
+
+.lastDivList li{
+    padding: 0.7em;
+    word-spacing: 0.2em;
+    font-size: 1.2em;
+}
+
+
+/* footer */
+footer h2 {
+    padding: 2rem 0.4rem;
+    font-weight: bold
+}
+
+footer li {
+    padding: 0.5rem;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8db62;
+    padding-bottom: 10rem;
+}
